@@ -29,7 +29,7 @@ Other scripts named `EPGsim_X.m` are predefined pulse sequences that take inputs
 EPG represents the magnetization in terms of configuration states. At any time, the configuration matrix Ω looks like this:
 
 <p align="center"> <a>
-    <img title="eqn1" src="https://github.com/imr-framework/epg-matlab/blob/master/EPG_guide_equations/e1.PNG" width="225">
+    <img title="eqn1" src="https://github.com/imr-framework/extended-phase-graph/blob/main/EPG_guide_equations/e1.PNG" width="225">
   </a></p>
 	
 There are three basic operators in EPG simulation: RF pulse, gradient shift, and T1 & T2 relaxation, represented by the functions rf_rotation, shift_grad, and relax.
@@ -44,14 +44,14 @@ The rotation operator exchanges the F+, F-, and Z populations within each k.
 The operator is equivalent to a matrix multiplication, Ω=T(Φ,α)Ω, where:
 
 <p align="center"> <a>
-    <img title="eqn2" src="https://github.com/imr-framework/epg-matlab/blob/master/EPG_guide_equations/e2.PNG" width="400">
+    <img title="eqn2" src="https://github.com/imr-framework/extended-phase-graph/blob/main/EPG_guide_equations/e2.PNG" width="400">
   </a></p>
 
 ### Gradient shift
 A positive unit gradient (dk = 1) moves all the F populations to a higher k but keeps the Z populations in place. For example:
 
 <p align="center"> <a>
-    <img title="eqn3" src="https://github.com/imr-framework/epg-matlab/blob/master/EPG_guide_equations/e3.PNG" width="500">
+    <img title="eqn3" src="https://github.com/imr-framework/extended-phase-graph/blob/main/EPG_guide_equations/e3.PNG" width="500">
   </a></p>
 
 With a negative gradient, the populations move in the opposite direction, and as gradients are applied, the matrix grows more columns.
@@ -62,13 +62,13 @@ T1 and T2 relaxation are represented together in the following operator. Over a 
 For k = 0:
 
 <p align="center"> <a>
-    <img title="eqn4" src="https://github.com/imr-framework/epg-matlab/blob/master/EPG_guide_equations/e4.PNG" width="350">
+    <img title="eqn4" src="https://github.com/imr-framework/extended-phase-graph/blob/main/EPG_guide_equations/e4.PNG" width="350">
   </a></p>	
   
 And for k ≠0,
 
 <p align="center"> <a>
-    <img title="eqn5" src="https://github.com/imr-framework/epg-matlab/blob/master/EPG_guide_equations/e5.PNG" width="270">
+    <img title="eqn5" src="https://github.com/imr-framework/extended-phase-graph/blob/main/EPG_guide_equations/e5.PNG" width="270">
   </a></p>	
 
 
@@ -113,7 +113,7 @@ All of them share the outputs `[om_store, echoes]` where om_store is a cell arra
 To plot echoes, simply plot the output `echoes` with the 2nd column on the y-axis and the 1st column on the x-axis. For an intermediate number of echoes, the `stem()` function can be useful too.
 
 <p align="center"> <a>
-    <img title="figure1" src="https://github.com/imr-framework/epg-matlab/blob/master/EPG_guide_equations/fig1.png" width="500">
+    <img title="figure1" src="https://github.com/imr-framework/extended-phase-graph/blob/main/EPG_guide_equations/fig1.png" width="500">
   </a></p>	
 
 
