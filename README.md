@@ -1,6 +1,6 @@
 # EPG (MATLAB version)
 Implementation of the Extended Phase Graph (EPG) simulation algorithm for multi-echo MRI.
-For the theory, see https://www.ncbi.nlm.nih.gov/pubmed/24737382 (Weigel, 2015) or read [this powerpoint presentation](https://github.com/imr-framework/epg-matlab/blob/master/epg/EPG-notes-presentation.pptx).
+For the theory, see https://www.ncbi.nlm.nih.gov/pubmed/24737382 (Weigel, 2015) or read [this powerpoint presentation](https://github.com/imr-framework/extended-phase-graph/blob/main/epg/EPG-notes-presentation.pptx).
 
 A Python version can be find within the same project as https://github.com/imr-framework/epg.
 
